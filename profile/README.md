@@ -1,4 +1,4 @@
-## Serverless Stream Based Processing Framework 🏔️
+## Laminar : Serverless Stream Based Processing Framework 🏔️
 
 ### Execution Guide 
 
