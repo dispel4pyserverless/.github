@@ -15,7 +15,7 @@ Following this, any dispel4py workflow can be run within the client directory.
 
 A new feature of this framework is the ability to search the Registry for PEs (Processing Elements) with natural language or code. To use this feature follow the instructions below. 
 
-To search with natural language select the "text" option and provide the search query. Note "pe" must be specified as searches are performed on PE code. 
+To search with natural language select the "text" option and provide the search query, otherwise select the "code" option and provide a code query. Note "pe" must be specified as searches are performed on PE code. 
 
 Text-to-code Search
 ```
