@@ -2,7 +2,15 @@
 
 ### Execution Guide 
 
-`dispel4py-server`,`dispel4py-execution` and `dispel4py-client` contain induvidual instruction guides for installation and execution and should be followed in the respective order. Note that when running `redis` or `dynamic` mappings, the `redis-server` should be running in a seperate terminal. Instructions for running `redis-server` as follows:
+`dispel4py-server`,`dispel4py-execution` and `dispel4py-client` contain induvidual instruction guides for installation and execution and should be followed in the respective order. The client and execution application require a conda environment to run in which can be run as follows (for more details visit the respective repositories to install the required modules):
+
+```
+note conda must be installed beforehand, go to https://conda.io/projects/conda/en/stable/user-guide/install/linux.html
+conda create --name py10 python=3.10
+conda activate py10
+```
+
+Note that when running `redis` or `dynamic` mappings, the `redis-server` should be running in a separate terminal. Instructions for running `redis-server` as follows:
 
 1. Open new terminal 
 2. `conda activate py10`
