@@ -44,9 +44,55 @@ Open a new terminal with the `Laminar` directory.
 ```
 /data/Laminar> 
 ```
-
+Clone the execution application repository.
+```
+/data/Laminar> git clone https://github.com/dispel4pyserverless/dispel4py-execution.git
+```
+Enter the execution directory.
+```
+/data/Laminar> cd dispel4py-execution 
+```
+In order to run the application you need to create a new Python 3.10 environment. Note conda must be installed beforehand, go to https://conda.io/projects/conda/en/stable/user-guide/install/linux.html
+```
+/data/Laminar/dispel4py-execution> conda create --name py10 python=3.10
+/data/Laminar/dispel4py-execution> conda activate py10
+```
+Install dispel4py
+```
+(py10) /data/Laminar/dispel4py-execution> git clone https://github.com/dispel4py2-0/dispel4py.git
+(py10) /data/Laminar/dispel4py-execution> cd dispel4py
+(py10) /data/Laminar/dispel4py-execution/dispel4py> pip install -r requirements.txt
+(py10) /data/Laminar/dispel4py-execution/dispel4py> python setup.py install
+(py10) /data/Laminar/dispel4py-execution/dispel4py> cd ..
+(py10) /data/Laminar/dispel4py-execution>
+```
+Test dispel4py.
+```
+(py10) /data/Laminar/dispel4py-execution> dispel4py simple dispel4py.examples.graph_testing.word_count -i 10
+```
+Install app modules.
+```
+(py10) /data/Laminar/dispel4py-execution> pip install -r requirements_app.txt
+```
+Run application
+```
+(py10) /data/Laminar/dispel4py-execution> flask run 
+```
+The execution engine will now be running and ready to receive requests from the server. The sample output will be as follows:
+```
+(py10) /data/Laminar/dispel4py-execution>
+...
+Running on http://127.0.0.1:5000
+...
+```
 ### Client Installation and Execution
-
+Open a new terminal with the `Laminar` directory. 
+```
+/data/Laminar> 
+```
+Clone the client application repository.
+```
+```
 ## Additional Execution Notes
 
 `dispel4py-server`,`dispel4py-execution` and `dispel4py-client` contain individual instruction guides for installation and execution and should be followed in the respective order. The client and execution application require a conda environment to run in which can be created as follows (for more details visit the respective repositories to install the required modules):
