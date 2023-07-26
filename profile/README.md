@@ -92,6 +92,36 @@ Open a new terminal with the `Laminar` directory.
 ```
 Clone the client application repository.
 ```
+/data/Laminar> git clone https://github.com/dispel4pyserverless/dispel4py-client.git
+```
+Enter the client directory.
+```
+/data/Laminar> cd dispel4py-client
+```
+Activate the conda environment previously created.
+```
+/data/Laminar/dispel4py-client> conda activate py10
+```
+Install dispel4py.
+```
+(py10) /data/Laminar/dispel4py-client> git clone https://github.com/dispel4py2-0/dispel4py.git
+(py10) /data/Laminar/dispel4py-client> cd dispel4py
+(py10) /data/Laminar/dispel4py-client/dispel4py> pip install -r requirements.txt
+(py10) /data/Laminar/dispel4py-client/dispel4py> python setup.py install
+(py10) /data/Laminar/dispel4py-client/dispel4py> cd ..
+(py10) /data/Laminar/dispel4py-client>
+```
+Test dispel4py.
+```
+(py10) /data/Laminar/dispel4py-client> dispel4py simple dispel4py.examples.graph_testing.word_count -i 10
+```
+Install client modules
+```
+(py10) /data/Laminar/dispel4py-client> pip install -r requirements_client.txt
+```
+Run sample client program.
+```
+(py10) /data/Laminar/dispel4py-client> python CLIENT_EXAMPLES\<file>
 ```
 ## Additional Execution Notes
 
