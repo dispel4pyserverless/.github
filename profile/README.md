@@ -1,21 +1,21 @@
 ## Laminar : Serverless Stream Based Processing Framework 🏔️
 
-### Step-by-Step Installation Guide 
+## Step-by-Step Installation Guide 
 
 There are three components to this framework which must be installed and executed. To run the whole framework and test with a sample program follow the instructions below:
 
-## Framework 
+### Framework 
 First, create a new directory which will contain all the framework components
 ```
 /data> mkdir Laminar
 /data> cd Laminar
 /data/Laminar> 
 ```
-## Server Installation and Execution 
+### Server Installation and Execution 
 
 
 
-### Additional Execution Notes
+## Additional Execution Notes
 
 `dispel4py-server`,`dispel4py-execution` and `dispel4py-client` contain individual instruction guides for installation and execution and should be followed in the respective order. The client and execution application require a conda environment to run in which can be created as follows (for more details visit the respective repositories to install the required modules):
 
