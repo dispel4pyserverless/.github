@@ -1,8 +1,12 @@
 ## Laminar : Serverless Stream Based Processing Framework 🏔️
 
+### Step-by-Step Installation Guide 
+
+
+
 ### Execution Notes
 
-`dispel4py-server`,`dispel4py-execution` and `dispel4py-client` contain induvidual instruction guides for installation and execution and should be followed in the respective order. The client and execution application require a conda environment to run in which can be created as follows (for more details visit the respective repositories to install the required modules):
+`dispel4py-server`,`dispel4py-execution` and `dispel4py-client` contain individual instruction guides for installation and execution and should be followed in the respective order. The client and execution application require a conda environment to run in which can be created as follows (for more details visit the respective repositories to install the required modules):
 
 ```
 note conda must be installed beforehand, go to https://conda.io/projects/conda/en/stable/user-guide/install/linux.html
