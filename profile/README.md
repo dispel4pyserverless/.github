@@ -5,15 +5,47 @@
 There are three components to this framework which must be installed and executed. To run the whole framework and test with a sample program follow the instructions below:
 
 ### Framework 
-First, create a new directory which will contain all the framework components
+First, create a new directory which will contain all the framework components.
 ```
 /data> mkdir Laminar
 /data> cd Laminar
 /data/Laminar> 
 ```
 ### Server Installation and Execution 
+Open a new terminal with the new `Laminar` directory. 
+```
+/data/Laminar> 
+```
+Clone the server application repository.
+```
+/data/Laminar> git clone https://github.com/dispel4pyserverless/dispel4py-server.git
+```
+Enter the server directory.
+```
+/data/Laminar> cd dispel4py-server
+```
+To manage permission issues, run:
+```
+/data/Laminar/dispel4py-server> chmod +x gradlew
+```
+To run the server
+```
+/data/Laminar/dispel4py-server> ./gradlew bootRun
+```
+The server will now be running, and ready to receive requests. You should see this sample output 
+```
+/data/Laminar/dispel4py-server>
+...
+com.dispel4py.rest.RestApplication: Started RestApplication in 66.905 seconds (JVM running for 69.911)
+...
+```
+### Execution Installation and Execution
+Open a new terminal with the `Laminar` directory. 
+```
+/data/Laminar> 
+```
 
-
+### Client Installation and Execution
 
 ## Additional Execution Notes
 
