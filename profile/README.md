@@ -119,9 +119,13 @@ Install client modules
 ```
 (py10) /data/Laminar/dispel4py-client> pip install -r requirements_client.txt
 ```
+Copy sample client program to `dispel4py-client` directory.
+```
+(py10) /data/Laminar/dispel4py-client> cp CLIENT_EXAMPLES/IsPrime.py .
+```
 Run sample client program.
 ```
-(py10) /data/Laminar/dispel4py-client> python CLIENT_EXAMPLES\<file>
+(py10) /data/Laminar/dispel4py-client> python IsPrime.py
 ```
 ## Additional Execution Notes
 
